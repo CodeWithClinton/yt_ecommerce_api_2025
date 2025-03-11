@@ -1,13 +1,20 @@
+import stripe 
+from django.conf import settings
 from django.shortcuts import render
 from django.contrib.auth import get_user_model
 from django.db.models import Q
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Cart, CartItem, Category, Product, Review, Wishlist
+from .models import Cart, CartItem, Category, Order, OrderItem, Product, Review, Wishlist
 from .serializers import CartItemSerializer, CartSerializer, CategoryDetailSerializer, CategoryListSerializer, ProductListSerializer, ProductDetailSerializer, ReviewSerializer, WishlistSerializer
 
-# Create your views here.
 
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
+# Create your views here.
+stripe.api_key = settings.STRIPE_SECRET_KEY
+endpoint_secret = settings.WEBHOOK_SECRET
 User = get_user_model()
 
 @api_view(['GET'])
@@ -151,3 +158,90 @@ def product_search(request):
 
 
 
+
+
+@api_view(['POST'])
+def create_checkout_session(request):
+    cart_code = request.data.get("cart_code")
+    email = request.data.get("email")
+    cart = Cart.objects.get(cart_code=cart_code)
+    try:
+        checkout_session = stripe.checkout.Session.create(
+            customer_email= email,
+            payment_method_types=['card'],
+            line_items=[
+                {
+                    'price_data': {
+                        'currency': 'usd',
+                        'product_data': {'name': item.product.name},
+                        'unit_amount': int(item.product.price) * 100,  # Amount in cents ($10)
+                    },
+                    'quantity': item.quantity,
+                }
+
+                for item in cart.cartitems.all()
+            ],
+            mode='payment',
+            success_url="https://nextshoppit.vercel.app/success",
+            cancel_url="https://nextshoppit.vercel.app/cancel",
+            metadata = {"cart_code": cart_code}
+        )
+        return Response({'data': checkout_session})
+    except Exception as e:
+        return Response({'error': str(e)}, status=400)
+
+
+
+
+@csrf_exempt
+def my_webhook_view(request):
+  payload = request.body
+  sig_header = request.META['HTTP_STRIPE_SIGNATURE']
+  event = None
+
+  try:
+    event = stripe.Webhook.construct_event(
+      payload, sig_header, endpoint_secret
+    )
+  except ValueError as e:
+    # Invalid payload
+    return HttpResponse(status=400)
+  except stripe.error.SignatureVerificationError as e:
+    # Invalid signature
+    return HttpResponse(status=400)
+
+  if (
+    event['type'] == 'checkout.session.completed'
+    or event['type'] == 'checkout.session.async_payment_succeeded'
+  ):
+    session = event['data']['object']
+    cart_code = session.get("metadata", {}).get("cart_code")
+
+    fulfill_checkout(session, cart_code)
+
+
+    
+
+    
+
+  return HttpResponse(status=200)
+
+
+
+def fulfill_checkout(session, cart_code):
+    
+    order = Order.objects.create(stripe_checkout_id=session["id"],
+        amount=session["amount_total"],
+        currency=session["currency"]/100,
+        customer_email=session["customer_email"],
+        status="Paid",)
+    
+
+    cart = Cart.objects.get(cart_code=cart_code)
+    cartitems = cart.cartitems.all()
+
+    for item in cartitems:
+        orderitem = OrderItem.objects.create(order=order, product=item.product, 
+                                             quantity=item.quantity)
+    
+    cart.delete
