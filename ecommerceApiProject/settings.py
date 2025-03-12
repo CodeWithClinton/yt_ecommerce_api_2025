@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 
 DB = os.getenv("DB")
 
-if DB:
-     DATABASES = {
+if DB == True:
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'railway',
