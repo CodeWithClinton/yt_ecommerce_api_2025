@@ -83,9 +83,10 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases 
 
-DB = os.getenv("DB")
 
-if DB == "True":
+DB = os.getenv("DB", "False").lower() in ["true", "1"]
+
+if DB:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -96,18 +97,13 @@ if DB == "True":
             'PORT': os.getenv("PG_PORT"),  
         }
     }
-
-    
-
 else:
-     
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-
 
    
 
