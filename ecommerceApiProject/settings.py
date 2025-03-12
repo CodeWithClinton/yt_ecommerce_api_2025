@@ -90,16 +90,6 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 #         }
 #     }
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': os.getenv("PG_PASSWORD"),
-#             'HOST': os.getenv("PG_HOST"),
-#             'PORT': os.getenv("PG_PORT"),  
-#         }
-#     }
 
 
 DATABASES = {
@@ -114,28 +104,6 @@ DATABASES = {
     }
 
 
-
-# DB = os.getenv("DB", "False").lower() in ["true", "1"]
-
-# if DB:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
-#             'HOST': "metro.proxy.rlwy.net",
-#             'PORT': "22806",  
-#         }
-#     }
-
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
 
    
 
@@ -205,3 +173,75 @@ WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'railway',
+#             'USER': 'postgres',
+#             'PASSWORD': os.getenv("PG_PASSWORD"),
+#             'HOST': os.getenv("PG_HOST"),
+#             'PORT': os.getenv("PG_PORT"),  
+#         }
+#     }
+
+
+
+# DB = os.getenv("DB", "False").lower() in ["true", "1"]
+
+# if DB:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'railway',
+#             'USER': 'postgres',
+#             'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
+#             'HOST': "metro.proxy.rlwy.net",
+#             'PORT': "22806",  
+#         }
+#     }
+
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
