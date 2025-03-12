@@ -222,7 +222,6 @@ def my_webhook_view(request):
 
     
 
-    
 
   return HttpResponse(status=200)
 
