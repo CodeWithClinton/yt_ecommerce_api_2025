@@ -92,17 +92,29 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 
 
 
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'railway',
+#             'USER': 'postgres',
+#             'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
+#             'HOST': "metro.proxy.rlwy.net",
+#             'PORT': "22806",  
+#         }
+#     }
+
+
+
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'railway',
             'USER': 'postgres',
-            'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
-            'HOST': "metro.proxy.rlwy.net",
-            'PORT': "22806",  
+            'PASSWORD': os.getenv("PG_PASSWORD"),
+            'HOST': os.getenv("PG_HOST"),
+            'PORT': os.getenv("PG_PORT"),  
         }
     }
-
 
 
    

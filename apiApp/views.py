@@ -5,8 +5,9 @@ from django.contrib.auth import get_user_model
 from django.db.models import Q
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Cart, CartItem, Category, Order, OrderItem, Product, Review, Wishlist
-from .serializers import CartItemSerializer, CartSerializer, CategoryDetailSerializer, CategoryListSerializer, ProductListSerializer, ProductDetailSerializer, ReviewSerializer, WishlistSerializer
+from rest_framework import status
+from .models import Cart, CartItem, Category, CustomerAddress, Order, OrderItem, Product, Review, Wishlist
+from .serializers import CartItemSerializer, CartSerializer, CategoryDetailSerializer, CategoryListSerializer, CustomerAddressSerializer, OrderSerializer, ProductListSerializer, ProductDetailSerializer, ReviewSerializer, SimpleCartSerializer, UserSerializer, WishlistSerializer
 
 
 from django.http import HttpResponse
@@ -15,6 +16,8 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 stripe.api_key = settings.STRIPE_SECRET_KEY
 endpoint_secret = settings.WEBHOOK_SECRET
+
+
 User = get_user_model()
 
 @api_view(['GET'])
@@ -244,3 +247,124 @@ def fulfill_checkout(session, cart_code):
                                              quantity=item.quantity)
     
     cart.delete
+
+
+
+
+# Newly Added
+
+
+@api_view(["POST"])
+def create_user(request):
+    username = request.data.get("username")
+    email = request.data.get("email")
+    first_name = request.data.get("first_name")
+    last_name = request.data.get("last_name")
+    profile_picture_url = request.data.get("profile_picture_url")
+
+    new_user = User.objects.create(username=username, email=email,
+                                       first_name=first_name, last_name=last_name, profile_picture_url=profile_picture_url)
+    serializer = UserSerializer(new_user)
+    return Response(serializer.data)
+
+
+@api_view(["GET"])
+def existing_user(request, email):
+    try:
+        User.objects.get(email=email)
+        return Response({"exists": True}, status=status.HTTP_200_OK)
+    except User.DoesNotExist:
+        return Response({"exists": False}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(['GET'])
+def get_orders(request):
+    email = request.query_params.get("email")
+    orders = Order.objects.filter(customer_email=email)
+    serializer = OrderSerializer(orders, many=True)
+    return Response(serializer.data)
+
+
+@api_view(["POST"])
+def add_address(request):
+    email = request.data.get("email")
+    street = request.data.get("street")
+    city = request.data.get("city")
+    phone = request.data.get("phone")
+
+    if not email:
+        return Response({"error": "Email is required"}, status=400)
+    
+    customer = User.objects.get(email=email)
+
+    address, created = CustomerAddress.objects.get_wor_create(
+        customer=customer)
+    address.email = email 
+    address.street = street 
+    address.city = city 
+    address.phone = phone 
+    address.save()
+
+    serializer = CustomerAddressSerializer(address)
+    return Response(serializer.data)
+
+
+@api_view(["GET"])
+def get_address(request):
+    email = request.query_params.get("email") 
+    address = CustomerAddress.objects.filter(customer__email=email)
+    if address.exists():
+        address = address.last()
+        serializer = CustomerAddressSerializer(address)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    return Response({"error": "Address not found"}, status=200)
+
+
+@api_view(["GET"])
+def my_wishlists(request):
+    email = request.query_params.get("email")
+    wishlists = Wishlist.objects.filter(user__email=email)
+    serializer = WishlistSerializer(wishlists, many=True)
+    return Response(serializer.data)
+
+
+@api_view(["GET"])
+def product_in_wishlist(request):
+    email = request.query_params.get("email")
+    product_id = request.query_params.get("product_id")
+
+    if Wishlist.objects.filter(product__id=product_id, user__email=email).exists():
+        return Response({"product_in_wishlist": True})
+    return Response({"product_in_wishlist": False})
+
+
+
+@api_view(['GET'])
+def get_cart(request, cart_code):
+    cart = Cart.objects.get(cart_code=cart_code)
+    serializer = CartSerializer(cart)
+    return Response(serializer.data)
+
+
+
+
+@api_view(['GET'])
+def get_cart_stat(request):
+    cart_code = request.query_params.get("cart_code")
+    cart = Cart.objects.get(cart_code=cart_code)
+    serializer = SimpleCartSerializer(cart)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def product_in_cart(request):
+    cart_code = request.query_params.get("cart_code")
+    product_id = request.query_params.get("product_id")
+    
+    cart = Cart.objects.get(cart_code=cart_code)
+    product = Product.objects.get(id=product_id)
+    
+    product_exists_in_cart = CartItem.objects.filter(cart=cart, product=product).exists()
+
+    return Response({'product_in_cart': product_exists_in_cart})
+

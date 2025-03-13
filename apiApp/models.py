@@ -153,3 +153,16 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return f"Order {self.product.name} - {self.order.stripe_checkout_id}"
+    
+
+
+# Newly Added 
+
+class CustomerAddress(models.Model):
+    customer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    street = models.CharField(max_length=50, blank=True, null=True)
+    city = models.CharField(max_length=50, blank=True, null=True)
+    phone = models.CharField(max_length=13, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.customer_email} - {self.street} - {self.city}"
