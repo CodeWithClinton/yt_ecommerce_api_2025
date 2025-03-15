@@ -208,13 +208,3 @@ This Django project is a backend API for an e-commerce application. It provides 
 
 This will start the Django development server, and you can test the API via tools like Postman or your browser.
 
-## API Authentication
-- The project uses JWT authentication.
-- After user registration, authenticate using login endpoint to receive a token.
-- Use the token for authenticated API requests in the `Authorization` header as:
-  ```
-  Authorization: Bearer <your_access_token>
-  ```
-
-Let me know if you need modifications or additions to this README file.
-
