@@ -83,37 +83,37 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases 
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
-
-
-DB = os.getenv("DB", "False").lower() in ["true", "1", "2"]
-
-if DB:
-
-    DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                'NAME': 'railway',
-                'USER': 'postgres',
-                'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
-                'HOST': "metro.proxy.rlwy.net",
-                'PORT': "22806",  
-            }
-        }
-
-
-else:
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+
+
+# DB = os.getenv("DB", "False").lower() in ["true", "1", "2"]
+
+# if DB:
+
+#     DATABASES = {
+#             'default': {
+#                 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#                 'NAME': 'railway',
+#                 'USER': 'postgres',
+#                 'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
+#                 'HOST': "metro.proxy.rlwy.net",
+#                 'PORT': "22806",  
+#             }
+#         }
+
+
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
 
 
