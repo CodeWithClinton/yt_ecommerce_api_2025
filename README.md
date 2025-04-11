@@ -211,7 +211,7 @@ This will start the Django development server, and you can test the API via tool
  -->
 ---
 
-```markdown
+<!-- ```markdown -->
 # Django E-commerce API
 
 ## Project Overview
