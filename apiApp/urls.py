@@ -24,7 +24,7 @@ urlpatterns = [
 
     path("get_orders", views.get_orders, name="get_orders"),
     path("create_user/", views.create_user, name="create_user"),
-    path("existing_user", views.existing_user, name="existing_user"),
+    path("existing_user/<str:email>", views.existing_user, name="existing_user"),
     path("add_address/", views.add_address, name="add_address"),
     path("get_address", views.get_address, name="get_address"),
     path("my_wishlists", views.my_wishlists, name="my_wishlists"),
