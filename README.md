@@ -284,7 +284,7 @@ This Django project is a backend API for an e-commerce application. It provides 
 ---
 
 #### Get Category Details
-**Endpoint:** `GET /category/<slug:slug>`
+**Endpoint:** `GET /categories/<slug:slug>`
 
 - **Response:**
   - JSON object containing category details.
