@@ -325,6 +325,76 @@ This Django project is a backend API for an e-commerce application. It provides 
 
 ---
 
+
+---
+
+### 📋 Review Endpoints
+
+#### ✅ Add Review
+
+**Endpoint:** `POST /add_review/`  
+**Payload:**
+```json
+{
+  "product_id": 1,
+  "email": "user@example.com",
+  "rating": 4,
+  "review": "Great product!"
+}
+```
+**Response:**
+```json
+{
+  "id": 1,
+  "product": 1,
+  "user": 5,
+  "rating": 4,
+  "review": "Great product!",
+  "created_at": "2025-04-17T10:00:00Z"
+}
+```
+**Error Response (if review already exists):**
+```text
+You already dropped a review for this product
+```
+
+---
+
+#### ✏️ Update Review
+
+**Endpoint:** `PUT /update_review/<int:pk>/`  
+**Payload:**
+```json
+{
+  "rating": 5,
+  "review": "Updated review text."
+}
+```
+**Response:**
+```json
+{
+  "id": 1,
+  "product": 1,
+  "user": 5,
+  "rating": 5,
+  "review": "Updated review text.",
+  "created_at": "2025-04-17T10:00:00Z"
+}
+```
+
+---
+
+#### ❌ Delete Review
+
+**Endpoint:** `DELETE /delete_review/<int:pk>/`  
+**Response:**
+```text
+Review deleted successfully!
+```
+
+---
+
+
 ## Wishlist Management
 
 #### Add/Remove Item from Wishlist

@@ -48,6 +48,8 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     very_good_review = serializers.SerializerMethodField()
     excellent_review = serializers.SerializerMethodField()
 
+    similar_products = serializers.SerializerMethodField()
+
 
     class Meta:
         model = Product
