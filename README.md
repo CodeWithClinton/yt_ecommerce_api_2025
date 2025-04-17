@@ -323,12 +323,10 @@ This Django project is a backend API for an e-commerce application. It provides 
 - **Response:**
   - Success message if deletion is successful.
 
----
-
 
 ---
 
-### 📋 Review Endpoints
+## 📋 Review Endpoints
 
 #### ✅ Add Review
 
