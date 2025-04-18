@@ -21,4 +21,9 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 
-admin.site.register([Cart, CartItem, Review, ProductRating, Wishlist, Order, OrderItem])
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ["product", "rating", "review", 'created', "updated"]
+admin.site.register(Review, ReviewAdmin)
+
+
+admin.site.register([Cart, CartItem, ProductRating, Wishlist, Order, OrderItem])
