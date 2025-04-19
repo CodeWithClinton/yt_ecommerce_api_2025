@@ -253,6 +253,275 @@ This Django project is a backend API for an e-commerce application. It provides 
    python manage.py runserver
    ```
 
+
+
+Sure Clinton! Here's a brief and well-structured README-style documentation for all the endpoints you listed. This includes the endpoint, payload (for `POST`/`PUT`), and the expected response.
+
+---
+
+# 🛍️ E-commerce API Documentation
+
+This API supports a basic e-commerce platform with features like product listing, cart management, reviews, wishlist, checkout, and user management.
+
+---
+
+## 📦 Products
+
+### `GET /product_list`
+- **Description**: Get all featured products.
+- **Response**:
+```json
+[
+  {
+    "id": 1,
+    "name": "Product A",
+    "price": 100,
+    ...
+  }
+]
+```
+
+### `GET /products/<slug:slug>`
+- **Description**: Get detailed info about a specific product.
+- **Response**:
+```json
+{
+  "id": 1,
+  "name": "Product A",
+  "description": "...",
+  ...
+}
+```
+
+---
+
+## 🧩 Categories
+
+### `GET /category_list`
+- **Description**: Get all product categories.
+- **Response**:
+```json
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    ...
+  }
+]
+```
+
+### `GET /categories/<slug:slug>`
+- **Description**: Get details of a specific category.
+- **Response**:
+```json
+{
+  "id": 1,
+  "name": "Electronics",
+  ...
+}
+```
+
+---
+
+## 🛒 Cart
+
+### `POST /add_to_cart/`
+- **Payload**:
+```json
+{
+  "cart_code": "abc123",
+  "product_id": 5
+}
+```
+- **Response**: Returns the updated cart.
+
+### `PUT /update_cartitem_quantity/`
+- **Payload**:
+```json
+{
+  "item_id": 3,
+  "quantity": 2
+}
+```
+- **Response**:
+```json
+{
+  "data": { ... },
+  "message": "Cartitem updated successfully!"
+}
+```
+
+### `GET /get_cart/<cart_code>`
+- **Description**: Retrieve full cart details using `cart_code`.
+
+### `GET /get_cart_stat?cart_code=abc123`
+- **Description**: Get cart subtotal and item count.
+
+### `DELETE /delete_cartitem/<int:pk>/`
+- **Response**: 
+```text
+"Cartitem deleted successfully!"
+```
+
+### `GET /product_in_cart?cart_code=abc123&product_id=5`
+- **Response**:
+```json
+{
+  "product_in_cart": true
+}
+```
+
+---
+
+## 📝 Reviews
+
+### `POST /add_review/`
+- **Payload**:
+```json
+{
+  "product_id": 5,
+  "email": "user@example.com",
+  "rating": 4,
+  "review": "Great product!"
+}
+```
+- **Response**: Review data or error if review already exists.
+
+### `PUT /update_review/<int:pk>/`
+- **Payload**:
+```json
+{
+  "rating": 5,
+  "review": "Updated review text"
+}
+```
+- **Response**: Updated review object.
+
+### `DELETE /delete_review/<int:pk>/`
+- **Response**:
+```text
+"Review deleted successfully!"
+```
+
+---
+
+## 💖 Wishlist
+
+### `POST /add_to_wishlist/`
+- **Payload**:
+```json
+{
+  "email": "user@example.com",
+  "product_id": 5
+}
+```
+- **Response**: Wishlist item or `204` if already existed and now deleted.
+
+### `GET /my_wishlists?email=user@example.com`
+- **Response**: List of wishlisted items.
+
+### `GET /product_in_wishlist?email=user@example.com&product_id=5`
+- **Response**:
+```json
+{
+  "product_in_wishlist": true
+}
+```
+
+---
+
+## 🔍 Search
+
+### `GET /search?query=phone`
+- **Response**: List of matching products.
+
+---
+
+## 💳 Checkout
+
+### `POST /create_checkout_session/`
+- **Payload**:
+```json
+{
+  "cart_code": "abc123",
+  "email": "user@example.com"
+}
+```
+- **Response**:
+```json
+{
+  "data": {
+    "id": "cs_test_xxx",
+    ...
+  }
+}
+```
+
+### `POST /webhook/`
+- **Stripe webhook**: Handles payment events and fulfills order.
+- **No payload from client**.
+
+---
+
+## 👤 User
+
+### `POST /create_user/`
+- **Payload**:
+```json
+{
+  "username": "johndoe",
+  "email": "john@example.com",
+  "first_name": "John",
+  "last_name": "Doe",
+  "profile_picture_url": "https://example.com/image.jpg"
+}
+```
+- **Response**: Created user data.
+
+### `GET /existing_user/<email>`
+- **Response**:
+```json
+{
+  "exists": true
+}
+```
+
+---
+
+## 📦 Orders
+
+### `GET /get_orders?email=user@example.com`
+- **Response**: List of orders for the user.
+
+---
+
+## 🏠 Address
+
+### `POST /add_address/`
+- **Payload**:
+```json
+{
+  "email": "user@example.com",
+  "street": "123 Street",
+  "city": "Cityname",
+  "phone": "123456789"
+}
+```
+- **Response**: Created or updated address.
+
+### `GET /get_address?email=user@example.com`
+- **Response**:
+```json
+{
+  "email": "user@example.com",
+  "street": "123 Street",
+  ...
+}
+```
+
+---
+
+<!-- 
 ## API Endpoints
 
 ### Product Endpoints
@@ -496,4 +765,4 @@ This will start the Django development server, and you can test the API via tool
 ```
 
 ---
-
+ -->
