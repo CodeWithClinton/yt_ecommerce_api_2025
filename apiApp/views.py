@@ -361,7 +361,7 @@ def product_in_cart(request):
     cart_code = request.query_params.get("cart_code")
     product_id = request.query_params.get("product_id")
     
-    cart = Cart.objects.get(cart_code=cart_code)
+    cart = Cart.objects.filter(cart_code=cart_code).first()
     product = Product.objects.get(id=product_id)
     
     product_exists_in_cart = CartItem.objects.filter(cart=cart, product=product).exists()
