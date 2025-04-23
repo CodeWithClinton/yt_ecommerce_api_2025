@@ -341,9 +341,13 @@ def product_in_wishlist(request):
 
 @api_view(['GET'])
 def get_cart(request, cart_code):
-    cart = Cart.objects.get(cart_code=cart_code)
-    serializer = CartSerializer(cart)
-    return Response(serializer.data)
+    cart = Cart.objects.filter(cart_code=cart_code).first()
+    
+    if cart:
+        serializer = CartSerializer(cart)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    return Response({"error": "Cart not found."}, status=status.HTTP_404_NOT_FOUND)
 
 
 
