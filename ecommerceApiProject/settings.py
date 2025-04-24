@@ -151,6 +151,7 @@ DATABASES = {
 
 
 
+
 DB = os.environ.get("DB")
 # If you set DB to True you will have the postgres database, if set DB to False, you will the sqlite3 databse.
 
