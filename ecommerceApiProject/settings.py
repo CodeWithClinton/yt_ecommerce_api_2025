@@ -226,7 +226,7 @@ STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
 print("PG_PASSWORD:", os.environ.get("PG_PASSWORD"))
-print("PG_HOST:", os.getenv("RAILWAY_PG_HOST"))
+print("PG_HOST:", os.environ.get("RAILWAY_PG_HOST"))
 
 
 if STRIPE_SECRET_KEY:
