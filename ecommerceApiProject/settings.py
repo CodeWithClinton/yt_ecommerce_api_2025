@@ -11,27 +11,15 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
 import os
 
-# import environ
+from dotenv import load_dotenv
 
-# env = environ.Env()
-# environ.Env.read_env()  # only works locally with a .env
-
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# env = environ.Env()
-
-# # Read from .env **only if it exists** (for local dev)
-# env_path = os.path.join(BASE_DIR, ".env")
-# if os.path.exists(env_path):
-#     environ.Env.read_env(env_path)
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -137,7 +125,6 @@ DATABASES = {
         }
     }
 
-
 # DATABASES = {
 #         'default': {
 #             'ENGINE': 'django.db.backends.postgresql',
@@ -160,7 +147,6 @@ DATABASES = {
 #             'PORT': "22806",  
 #         }
 #     }
-
 
 
 
@@ -239,8 +225,8 @@ STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
-print("PG_PASSWORD:", config("PG_PASSWORD"))
-print("PG_HOST:", config("PG_HOST"))
+print("PG_PASSWORD:", os.environ.get("PG_PASSWORD"))
+print("PG_HOST:", os.getenv("PG_HOST"))
 
 
 if STRIPE_SECRET_KEY:
