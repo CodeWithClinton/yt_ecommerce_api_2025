@@ -238,8 +238,8 @@ STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
-print("PG_PASSWORD:", env("PG_PASSWORD"))
-print("PG_HOST:", env("PG_HOST"))
+print("PG_PASSWORD:", os.environ.get("PG_PASSWORD"))
+print("PG_HOST:", os.environ.get("PG_HOST"))
 
 
 if STRIPE_SECRET_KEY:
