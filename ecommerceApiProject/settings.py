@@ -95,16 +95,16 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases 
 
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'railway',
-            'USER': 'postgres',
-            'PASSWORD': os.environ.get("PG_PASSWORD"),
-            'HOST': os.environ.get("PG_HOST"),
-            'PORT': os.environ.get("PG_PORT"),  
-        }
-    }
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'railway',
+#             'USER': 'postgres',
+#             'PASSWORD': os.environ.get("PG_PASSWORD"),
+#             'HOST': os.environ.get("PG_HOST"),
+#             'PORT': os.environ.get("PG_PORT"),  
+#         }
+#     }
 
 
 # DATABASES = {
@@ -118,12 +118,12 @@ DATABASES = {
 #         }
 #     }
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # DATABASES = {
 #         'default': {
@@ -224,6 +224,9 @@ AUTH_USER_MODEL = "apiApp.CustomUser"
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
+
+print("PG_PASSWORD:", os.environ.get("PG_PASSWORD"))
+print("PG_HOST:", os.environ.get("PG_HOST"))
 
 
 if STRIPE_SECRET_KEY:
