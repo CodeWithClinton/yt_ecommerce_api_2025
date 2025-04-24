@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 import os
 
-import environ
+# import environ
 
 # env = environ.Env()
 # environ.Env.read_env()  # only works locally with a .env
@@ -24,12 +25,12 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-env = environ.Env()
+# env = environ.Env()
 
-# Read from .env **only if it exists** (for local dev)
-env_path = os.path.join(BASE_DIR, ".env")
-if os.path.exists(env_path):
-    environ.Env.read_env(env_path)
+# # Read from .env **only if it exists** (for local dev)
+# env_path = os.path.join(BASE_DIR, ".env")
+# if os.path.exists(env_path):
+#     environ.Env.read_env(env_path)
 
 
 
@@ -238,8 +239,8 @@ STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
-print("PG_PASSWORD:", os.environ.get("PG_PASSWORD"))
-print("PG_HOST:", os.environ.get("PG_HOST"))
+print("PG_PASSWORD:", config("PG_PASSWORD"))
+print("PG_HOST:", config("PG_HOST"))
 
 
 if STRIPE_SECRET_KEY:
