@@ -172,21 +172,49 @@ def create_checkout_session(request):
         checkout_session = stripe.checkout.Session.create(
             customer_email= email,
             payment_method_types=['card'],
+
+
             line_items=[
                 {
                     'price_data': {
                         'currency': 'usd',
                         'product_data': {'name': item.product.name},
-                        'unit_amount': int(item.product.price) * 100,  # Amount in cents ($10)
+                        'unit_amount': int(item.product.price * 100),  # Amount in cents
                     },
                     'quantity': item.quantity,
                 }
-
                 for item in cart.cartitems.all()
+            ] + [
+                {
+                    'price_data': {
+                        'currency': 'usd',
+                        'product_data': {'name': 'VAT Fee'},
+                        'unit_amount': 500,  # $5 in cents
+                    },
+                    'quantity': 1,
+                }
             ],
+
+
+            
+            # line_items=[
+            #     {
+            #         'price_data': {
+            #             'currency': 'usd',
+            #             'product_data': {'name': item.product.name},
+            #             'unit_amount': int(item.product.price) * 100,  # Amount in cents ($10)
+            #         },
+            #         'quantity': item.quantity,
+            #     }
+
+            #     for item in cart.cartitems.all()
+            # ],
             mode='payment',
-            success_url="https://nextshoppit.vercel.app/success",
-            cancel_url="https://nextshoppit.vercel.app/cancel",
+            # success_url="https://nextshoppit.vercel.app/success",
+            # cancel_url="https://nextshoppit.vercel.app/cancel",
+
+            success_url="http://localhost:3000/success",
+            cancel_url="http://localhost:3000/cancel",
             metadata = {"cart_code": cart_code}
         )
         return Response({'data': checkout_session})

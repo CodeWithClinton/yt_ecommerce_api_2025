@@ -95,84 +95,29 @@ WSGI_APPLICATION = 'ecommerceApiProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases 
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': os.environ.get("PG_PASSWORD"),
-#             'HOST': os.environ.get("PG_HOST"),
-#             'PORT': os.environ.get("PG_PORT"),  
-#         }
-#     }
+DB = os.environ.get("DB")
+# If you set DB to True you will have the postgres database, if set DB to False, you will the sqlite3 databse.
 
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': os.environ.get("PG_PASSWORD"),
-#             'HOST': os.environ.get("PG_HOST"),
-#             'PORT': os.environ.get("PG_PORT"),  
-#         }
-#     }
+if DB in ["True", True]:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'railway',
+            'USER': 'postgres',
+            'PASSWORD': os.environ.get("PG_PASSWORD"),
+            'HOST': os.environ.get("PG_HOST"),
+            'PORT': os.environ.get("PG_PORT"),  
+        }
+    }
 
-DATABASES = {
+else:
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': os.environ.get("PG_PASSWORD"),
-#             'HOST': os.environ.get("PG_HOST"),
-#             'PORT': os.environ.get("PG_PORT")
-#         }
-#     }
-
-
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': "nIVmTssiiqRURwFENJIUAncraumoAAya",
-#             'HOST': "metro.proxy.rlwy.net",
-#             'PORT': "22806",  
-#         }
-#     }
-
-
-
-DB = os.environ.get("DB")
-# If you set DB to True you will have the postgres database, if set DB to False, you will the sqlite3 databse.
-
-
-# if DB in ["True", True]:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.postgresql',
-#             'NAME': 'railway',
-#             'USER': 'postgres',
-#             'PASSWORD': os.environ.get("PG_PASSWORD"),
-#             'HOST': os.environ.get("PG_HOST"),
-#             'PORT': os.environ.get("PG_PORT"),  
-#         }
-#     }
-
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
 
 
 # Password validation
