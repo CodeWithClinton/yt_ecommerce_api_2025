@@ -263,10 +263,10 @@ def fulfill_checkout(session, cart_code):
         customer_email=session["customer_email"],
         status="Paid",)
     
-    if order:
-        print("yeehhhhh")
-    else: 
-        print("Nayyyyy")
+    # if order:
+    #     print("yeehhhhh")
+    # else: 
+    #     print("Nayyyyy")
     
 
     cart = Cart.objects.get(cart_code=cart_code)
