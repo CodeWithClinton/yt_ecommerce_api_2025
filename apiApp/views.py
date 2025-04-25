@@ -258,7 +258,7 @@ def my_webhook_view(request):
 def fulfill_checkout(session, cart_code):
     
     order = Order.objects.create(stripe_checkout_id=session["id"],
-        amount=session["amount_total"] / 100,
+        amount=session["amount_total"],
         currency=session["currency"],
         customer_email=session["customer_email"],
         status="Paid",)
