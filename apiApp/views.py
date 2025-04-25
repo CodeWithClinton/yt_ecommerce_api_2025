@@ -261,7 +261,10 @@ def fulfill_checkout(session, cart_code):
         amount=session["amount_total"],
         currency=session["currency"],
         customer_email=session["customer_email"],
-        status="Paid",)
+        status="Paid")
+    
+
+    print(session)
 
 
     cart = Cart.objects.get(cart_code=cart_code)
