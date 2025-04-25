@@ -251,9 +251,6 @@ def my_webhook_view(request):
     fulfill_checkout(session, cart_code)
 
 
-    
-
-
   return HttpResponse(status=200)
 
 
@@ -274,7 +271,7 @@ def fulfill_checkout(session, cart_code):
         orderitem = OrderItem.objects.create(order=order, product=item.product, 
                                              quantity=item.quantity)
     
-    cart.delete
+    cart.delete()
 
 
 
