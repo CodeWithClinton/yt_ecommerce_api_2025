@@ -258,7 +258,7 @@ def my_webhook_view(request):
 def fulfill_checkout(session, cart_code):
     
     order = Order.objects.create(stripe_checkout_id=session["id"],
-        amount=session["amount_total"] / 100,
+        amount=session["amount_total"],
         currency=session["currency"],
         customer_email=session["customer_email"],
         status="Paid",)
@@ -380,9 +380,12 @@ def get_cart(request, cart_code):
 @api_view(['GET'])
 def get_cart_stat(request):
     cart_code = request.query_params.get("cart_code")
-    cart = Cart.objects.get(cart_code=cart_code)
-    serializer = SimpleCartSerializer(cart)
-    return Response(serializer.data)
+    cart = Cart.objects.filter(cart_code=cart_code).first()
+
+    if cart:
+        serializer = SimpleCartSerializer(cart)
+        return Response(serializer.data)
+    return Response({"error": "Cart not found."}, status=status.HTTP_404_NOT_FOUND)
 
 
 @api_view(['GET'])
