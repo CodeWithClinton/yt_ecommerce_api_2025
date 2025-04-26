@@ -1,0 +1,2483 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-03-04T07:55:46.117Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Electronics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-03-04T07:55:52.347Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Samsung Gaming Pad",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-03-04T07:56:03.054Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Samsung Gaming Pad",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-03-04T07:56:42.241Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Apple Robotic Digital Camera",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-03-04T07:59:00.988Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Food",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-03-04T07:59:35.167Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Clothings",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-03-04T08:00:06.778Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "Toys",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-03-04T08:00:23.409Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Books",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-03-08T05:07:57.126Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "3 x Samsung Gaming Pad in cart 2345",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-03-08T05:08:04.082Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "1 x Apple Robotic Digital Camera in cart 2345",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-03-08T22:53:11.096Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "2 x Apple Robotic Digital Camera in cart 2345",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-04-13T17:28:27.813Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Simple Videography Set",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-04-13T17:29:24.169Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Smart Watch Black V9",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-04-13T17:35:20.286Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Smart Watch Black V9",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-04-13T17:35:20.286Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Simple Videography Set",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-04-13T17:35:20.286Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Apple Robotic Digital Camera",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-04-13T17:35:20.286Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Samsung Gaming Pad",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-04-13T17:36:18.499Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "American Strawberry",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-04-13T17:36:56.210Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Armoured Caterpillar",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-04-13T17:37:29.071Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Apple Packed Shirt",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-04-13T17:37:59.691Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Apple Robotic Digital Camera",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-04-13T17:49:32.865Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Baggy Sized Jeans",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2025-04-13T17:51:32.029Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Bumble B Toy Bus",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2025-04-13T17:52:01.382Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Chocolate Baked Cake",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2025-04-13T17:53:16.346Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Coloured Macaroons Pair",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2025-04-13T17:53:41.712Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Elon's Recommended Books",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2025-04-13T17:54:08.177Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Female Blue Dress",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2025-04-13T17:54:47.798Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Female Green Jacket",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2025-04-13T18:00:18.554Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Fried Chips with Burger",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2025-04-13T18:01:07.094Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Fried Fish with Vegetables",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2025-04-13T18:01:38.341Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "Fried Macaroni",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2025-04-13T18:02:17.885Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Fried Spaghetti",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2025-04-13T18:02:53.244Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Guccie Clothing Set",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2025-04-13T18:03:42.769Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "21",
+      "object_repr": "Gucci Purple Sweater",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2025-04-13T18:05:06.424Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "Hooked - Learn to stay focused",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2025-04-13T18:05:41.591Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Jeff Bezos' Recommended Books",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2025-04-13T18:07:00.239Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "The Book  - Lord of the rings",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2025-04-13T18:07:26.178Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "Milky Jacket",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2025-04-13T18:08:02.463Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Simple Videography Set",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2025-04-13T18:08:51.653Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Smart Watch Black V9",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2025-04-13T18:09:43.790Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "Samsung Gaming Pad",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2025-04-13T18:11:20.191Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "Sony 4K Digital Camera",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2025-04-13T18:12:07.054Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Strawberry Chocolate Cake",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2025-04-13T18:14:31.747Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "31",
+      "object_repr": "TommyHilfiger Sweaters",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2025-04-13T18:15:29.010Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "32",
+      "object_repr": "Toy Trailer",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2025-04-13T18:16:04.834Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "33",
+      "object_repr": "Toy Tundra",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2025-04-13T18:17:22.275Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "34",
+      "object_repr": "Donald Trumps' Recommeded Books",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2025-04-13T18:18:40.101Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Armoured Caterpillar",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2025-04-13T18:19:03.916Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Fried Spaghetti",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2025-04-13T18:19:39.274Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Fried Chips with Burger",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2025-04-13T18:20:12.013Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "American Strawberry",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2025-04-13T19:55:54.592Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2025-04-13T20:00:10.119Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2025-04-13T20:00:18.251Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2025-04-13T20:00:39.641Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Books",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2025-04-13T20:01:02.449Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "Toys",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2025-04-13T20:01:19.653Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Clothings",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2025-04-13T20:01:28.284Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Food",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2025-04-13T20:01:34.341Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Electronics",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2025-04-15T12:44:28.241Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "nwachukwuclinton2018's review on American Strawberry",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2025-04-15T12:49:01.112Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "clint's review on American Strawberry",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2025-04-15T15:48:03.539Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "clint@gmail.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2025-04-15T17:31:20.925Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "American Strawberry",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2025-04-15T17:32:00.862Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "American Strawberry",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2025-04-15T17:32:52.909Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "American Strawberry",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2025-04-15T17:33:53.911Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Armoured Caterpillar",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2025-04-15T17:35:29.997Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Apple Packed Shirt",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2025-04-15T17:41:12.813Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Apple Robotic Digital Camera",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2025-04-15T17:41:30.337Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Baggy Sized Jeans",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2025-04-15T17:41:49.844Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Baggy Sized Jeans",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2025-04-15T17:42:33.934Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Bumble B Toy Bus",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2025-04-15T17:47:01.602Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Chocolate Baked Cake",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2025-04-15T17:47:27.483Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Coloured Macaroons Pair",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2025-04-15T17:47:57.017Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Elon's Recommended Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2025-04-15T17:48:25.578Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Female Blue Dress",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2025-04-15T17:48:43.154Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Female Green Jacket",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2025-04-15T17:48:59.666Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Fried Chips with Burger",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2025-04-15T17:49:23.457Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Fried Fish with Vegetables",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2025-04-15T17:49:44.389Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "Fried Macaroni",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2025-04-15T17:50:01.641Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Fried Spaghetti",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2025-04-15T17:50:19.605Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Guccie Clothing Set",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2025-04-15T17:50:37.079Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "21",
+      "object_repr": "Gucci Purple Sweater",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2025-04-15T17:50:54.988Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "Hooked - Learn to stay focused",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2025-04-15T17:51:12.812Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Jeff Bezos' Recommended Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2025-04-15T17:52:02.230Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "The Book  - Lord of the rings",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2025-04-15T17:52:33.501Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "Milky Jacket",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2025-04-15T17:53:07.632Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Simple Videography Set",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2025-04-15T17:53:30.057Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Smart Watch Black V9",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2025-04-15T17:53:52.422Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "Samsung Gaming Pad",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2025-04-15T17:54:18.874Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "Sony 4K Digital Camera",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2025-04-15T17:55:08.033Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Strawberry Chocolate Cake",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2025-04-15T17:55:15.425Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "31",
+      "object_repr": "TommyHilfiger Sweaters",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2025-04-15T17:55:45.931Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "32",
+      "object_repr": "Toy Trailer",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2025-04-15T17:56:04.351Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "33",
+      "object_repr": "Toy Tundra",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2025-04-15T17:56:26.466Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "34",
+      "object_repr": "Donald Trumps' Recommeded Books",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "21",
+      "object_repr": "clintoncode360's review on Smart Watch Black V9",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "20",
+      "object_repr": "clintoncode360's review on Donald Trumps' Recommeded Books",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "19",
+      "object_repr": "clintoncode360's review on The Book  - Lord of the rings",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "18",
+      "object_repr": "clintoncode360's review on Elon's Recommended Books",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "17",
+      "object_repr": "clintoncode360's review on Jeff Bezos' Recommended Books",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "16",
+      "object_repr": "clintoncode360's review on American Strawberry",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "clintoncode360's review on Fried Spaghetti",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "14",
+      "object_repr": "clintoncode360's review on Strawberry Chocolate Cake",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "13",
+      "object_repr": "clintoncode360's review on Fried Macaroni",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "12",
+      "object_repr": "clintoncode360's review on Fried Fish with Vegetables",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "11",
+      "object_repr": "clintoncode360's review on Fried Chips with Burger",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "clintoncode360's review on Milky Jacket",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "9",
+      "object_repr": "clintoncode360's review on Gucci Purple Sweater",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.421Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "clintoncode360's review on TommyHilfiger Sweaters",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.422Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "clintoncode360's review on Female Green Jacket",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.422Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "clintoncode360's review on Guccie Clothing Set",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.422Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "clintoncode360's review on Apple Packed Shirt",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2025-04-18T02:06:45.422Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "clintoncode360's review on Coloured Macaroons Pair",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2025-04-18T03:03:34.247Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "22",
+      "object_repr": "clintoncode360's review on American Strawberry",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2025-04-18T03:55:49.501Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "23",
+      "object_repr": "clintoncode360's review on American Strawberry",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2025-04-18T03:56:42.744Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "24",
+      "object_repr": "clintoncode360's review on American Strawberry",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2025-04-19T13:08:45.886Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "7Fm6SMBNi4",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2025-04-19T13:08:45.886Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "2345",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2025-04-19T13:47:49.145Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "UStvovu6Py",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2025-04-19T13:47:49.145Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "sI3yAbXSbE",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2025-04-19T16:12:22.127Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "UStvovu6Py",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2025-04-19T23:48:01.238Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "UStvovu6Py",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2025-04-20T00:30:59.115Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2025-04-20T00:49:57.593Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2025-04-20T01:05:30.718Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2025-04-20T01:21:31.925Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+      "action_time": "2025-04-20T01:36:58.305Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "11",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+      "action_time": "2025-04-20T01:39:52.978Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "12",
+      "object_repr": "NKPkTqHn8K",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "1ft6ajlzbbvud483794ew4br5ehzj9a7",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1tsCpB:L9kO6lQdf74-7KvK2PmOC-uyH95DnLJXAfEfI4CBAJw",
+      "expire_date": "2025-03-26T03:32:05.194Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "1sk1d8f973kkxbkhqlw086f8azb4rpaj",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1tpMhl:qBiQwCtqglUkuNmz3RJm5uMTNNqctlLgDATQ0p30-WQ",
+      "expire_date": "2025-03-18T07:28:41.547Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3tw0qo3dfl2wssoyw82hlx9oiin74qcc",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1u3FHm:9peMkmzVvPGSsO0AJLkrFq1fPOd4-r-YBlb4lvXeNcQ",
+      "expire_date": "2025-04-25T14:23:14.743Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "5o5jagwj6k9pz7butekin7n8m1793hj3",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1u5SDP:ohip2KcJijYqRjVpDns1c1eC1xxeVp-FaOFDjHCwsE4",
+      "expire_date": "2025-05-01T16:35:51.406Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8gk41znllgiwbg8vyduwuesdt2oai3o7",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1u80EO:ckF7aB5hzBYEYG2LCbIKHEYDiionb521qzq-8q7LD4A",
+      "expire_date": "2025-05-08T17:19:24.388Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "fyucvm9t7d5lgfzahudf54uo5a97ejwx",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1u4LHJ:7RznV31BK31rBz53MWSakBlpM0Zeotkp1KlUZ02uo94",
+      "expire_date": "2025-04-28T14:59:17.236Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "h6b9c4x0rcw2yrigkgqt1esy9hngtoa8",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1tq7CY:iriRprtTV4wcW41N6-H79yBWmNW-4JwfUJjuv5LqliA",
+      "expire_date": "2025-03-20T09:07:34.485Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lif86msfq64uuyiomkmihiylozc4c7zl",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1u67ZM:mBxnxqo3RO_PZ7omaw8mpyoDNLvoI9xJhyDvOcmYQlw",
+      "expire_date": "2025-05-03T12:45:16.377Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "mrb39r8y6obwc4p413y8wazs5y8lfrjw",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1tssSO:OyA7dfRNdrzmuW8YP-WCBoRpjHR276R4Ii6Yw2QQDHM",
+      "expire_date": "2025-03-27T23:59:20.531Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qgwo9xwkutcsfc87nsom1g3697r7e9gb",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHSG-tkmZ3mdAy7IEJxFIxq6i3N1CcuG0b2bel3nYt-z3RqtfIrszyW7XLQC-qXQQX1CelWMt27oE3hV-0sbnGunzON2_gwwt99phEoYckAWNwZEejSEjHVkcKJDWTtikUClhEiS0IFDHKZIaJpA4st8BB044vw:1tr70v:PL_sfFDft2ToFRddSaWzNbdUx-iloyvpUdnPDpMzY_w",
+      "expire_date": "2025-03-23T03:07:41.553Z"
+    }
+  },
+  {
+    "model": "apiApp.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$25ZlxMKnqJORYp01A142Va$+wB8A+te7Sbv5s1fNEDxMtxepxPm+Pviimdm2rGvT+g=",
+      "last_login": "2025-04-24T17:19:24.381Z",
+      "is_superuser": true,
+      "username": "clint",
+      "first_name": "Clinton",
+      "last_name": "Nwachukwu",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-03-04T07:28:11Z",
+      "email": "clint@gmail.com",
+      "profile_picture_url": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "apiApp.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nwachukwuclinton2018",
+      "first_name": "Clinton",
+      "last_name": "academy",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-04-11T14:23:51.350Z",
+      "email": "nwachukwuclinton2018@gmail.com",
+      "profile_picture_url": "https://lh3.googleusercontent.com/a/ACg8ocLYo92--Za6pnts_40BSYl5aSL9dIOlLVpvDSwD1ISdkdV8Qzw=s96-c",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "apiApp.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "clintoncode360",
+      "first_name": "Clinton",
+      "last_name": "Chibunna",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-04-17T11:54:23.516Z",
+      "email": "clintoncode360@gmail.com",
+      "profile_picture_url": "https://lh3.googleusercontent.com/a/ACg8ocJ7ENiboIDvEtWUZUoAGSI-_yfa01f21to-TJTMCdS18zhdtH8=s96-c",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "apiApp.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics",
+      "slug": "electronics",
+      "image": "category_img/electronics.svg"
+    }
+  },
+  {
+    "model": "apiApp.category",
+    "pk": 2,
+    "fields": {
+      "name": "Food",
+      "slug": "food",
+      "image": "category_img/food.svg"
+    }
+  },
+  {
+    "model": "apiApp.category",
+    "pk": 3,
+    "fields": {
+      "name": "Clothings",
+      "slug": "clothings",
+      "image": "category_img/clothing.svg"
+    }
+  },
+  {
+    "model": "apiApp.category",
+    "pk": 4,
+    "fields": {
+      "name": "Toys",
+      "slug": "toys",
+      "image": "category_img/toy.svg"
+    }
+  },
+  {
+    "model": "apiApp.category",
+    "pk": 5,
+    "fields": {
+      "name": "Books",
+      "slug": "books",
+      "image": "category_img/books.svg"
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 5,
+    "fields": {
+      "name": "American Strawberry",
+      "description": "Experience a burst of natural sweetness with the American Strawberry, a premium selection of farm-fresh berries grown under the best conditions in the U.S. These strawberries are handpicked at peak ripeness to ensure maximum flavor, juiciness, and vibrant color. With their plump size, deep red hue, and fragrant aroma, they�re a treat for the senses and a healthy indulgence you can feel good about.",
+      "price": "100.00",
+      "slug": "american-strawberry",
+      "image": "product_img/american-strawberry-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 6,
+    "fields": {
+      "name": "Armoured Caterpillar",
+      "description": "Meet the Armoured Caterpillar, a thrilling and educational toy that�s sure to capture the imagination of young explorers. Designed with vibrant colors and interactive features, this unique toy mimics the shape and movement of a caterpillar but with a fun twist�it�s armored! With rugged segments, blinking LED lights, and movable parts, this caterpillar rolls, twists, and transforms, encouraging kids to engage in hours of imaginative play.",
+      "price": "80.00",
+      "slug": "armoured-caterpillar",
+      "image": "product_img/amoured_caterpillar-trailer-min.jpg",
+      "featured": true,
+      "category": 4
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Apple Packed Shirt",
+      "description": "The Apple Packed Shirt is the perfect fusion of minimal design and everyday comfort. Crafted for those who appreciate subtle elegance, this shirt features a clean, tailored look made from breathable, soft cotton fabric that feels just right against your skin. Its unique �packed� concept refers to the neatly folded and compact packaging it comes in�ideal for gifting or travel. The shirt itself sports a small, tastefully embroidered apple logo, a nod to simplicity and innovation.",
+      "price": "30.00",
+      "slug": "apple-packed-shirt",
+      "image": "product_img/apple-packed-tshirt-min.jpg",
+      "featured": true,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Apple Robotic Digital Camera",
+      "description": "Step into the future of photography with the Apple Robotic Digital Camera�a revolutionary camera that combines smart technology with powerful optics. Engineered for creators, vloggers, and photography enthusiasts, this compact device offers robotic motion tracking, 4K video recording, and AI-powered features that take the guesswork out of content creation.",
+      "price": "200.00",
+      "slug": "apple-robotic-digital-camera",
+      "image": "product_img/apple-robotic-digital-camera-min_hcJkOIj.jpg",
+      "featured": true,
+      "category": 1
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Baggy Sized Jeans",
+      "description": "Introducing the Baggy Sized Jeans�a stylish staple for anyone who values both fashion and freedom of movement. These jeans bring back the iconic baggy fit with a modern twist, offering a perfect blend of urban edge and everyday comfort. Crafted from high-quality denim, they�re designed to be soft yet durable, making them suitable for casual streetwear, weekend hangouts, or even lounging in style.",
+      "price": "100.00",
+      "slug": "baggy-sized-jeans",
+      "image": "product_img/baggy-sized-jeans-min.jpg",
+      "featured": true,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 10,
+    "fields": {
+      "name": "Bumble B Toy Bus",
+      "description": "et your child�s imagination hit the road with the fun and friendly Bumble B Toy Bus. This colorful, eye-catching toy is designed to engage kids with lights, sounds, and movement, turning ordinary playtime into an adventure. Inspired by the charm of cartoon-style buses, Bumble B is packed with kid-friendly features like soft edges, interactive buttons, and music that sparks joy and curiosity.",
+      "price": "50.00",
+      "slug": "bumble-b-toy-bus",
+      "image": "product_img/bumble-b-toy-bus-min.jpg",
+      "featured": true,
+      "category": null
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 11,
+    "fields": {
+      "name": "Chocolate Baked Cake",
+      "description": "Introducing our Chocolate Baked Cake, a luxurious dessert experience for true chocolate lovers. This rich, decadent cake is made from the finest cocoa powder and dark chocolate, resulting in a moist and fluffy interior with a deep, satisfying chocolate flavor in every bite. Baked to perfection, the cake is topped with a velvety ganache glaze that adds an extra layer of indulgence and a hint of sophistication.",
+      "price": "100.00",
+      "slug": "chocolate-baked-cake",
+      "image": "product_img/chocolate-baked-cake-min.jpg",
+      "featured": false,
+      "category": null
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 12,
+    "fields": {
+      "name": "Coloured Macaroons Pair",
+      "description": "Delight your senses with the Coloured Macaroons Pair, a beautiful and delicious duo that�s as eye-catching as it is tasty. These artisanal macaroons are carefully handmade using premium ingredients to ensure a light, crisp shell and a creamy, melt-in-your-mouth center. Each pair comes in a combination of vibrant colors and bold flavors, such as raspberry & lemon, chocolate & mint, or vanilla & pistachio.",
+      "price": "100.00",
+      "slug": "coloured-macaroons-pair",
+      "image": "product_img/coloured-macaroons-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 13,
+    "fields": {
+      "name": "Elon's Recommended Books",
+      "description": "Step into the mind of innovation with Elon's Recommended Books, a curated collection of titles that have inspired one of the most forward-thinking entrepreneurs of our time. This book set includes works on science, technology, philosophy, space, and engineering�topics that have deeply influenced Elon Musk�s journey from startup founder to global visionary.",
+      "price": "50.00",
+      "slug": "elons-recommended-books",
+      "image": "product_img/elon-recommended-books-min.jpg",
+      "featured": false,
+      "category": 5
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 14,
+    "fields": {
+      "name": "Female Blue Dress",
+      "description": "Elegance meets comfort in our timeless Female Blue Dress, designed for the modern woman who values both sophistication and ease. This dress features a rich shade of blue that flatters all skin tones and exudes confidence and grace. Crafted from soft, breathable fabric, it drapes beautifully over the body, offering a figure-enhancing silhouette without feeling restrictive.",
+      "price": "150.00",
+      "slug": "female-blue-dress",
+      "image": "product_img/female-blue-dress-min.jpg",
+      "featured": false,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 15,
+    "fields": {
+      "name": "Female Green Jacket",
+      "description": "Make a bold fashion statement with our stylish Female Green Jacket, crafted for modern women who love to blend elegance with a splash of color. This jacket features a deep, rich green hue that adds freshness to any wardrobe, standing out beautifully in both casual and semi-formal settings. Made from high-quality fabric, it�s designed to keep you warm without compromising on comfort or flexibility.",
+      "price": "200.00",
+      "slug": "female-green-jacket",
+      "image": "product_img/female-green-jacket-min.jpg",
+      "featured": false,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 16,
+    "fields": {
+      "name": "Fried Chips with Burger",
+      "description": "Enjoy the ultimate fast-food combo with our Fried Chips with Burger, a satisfying and flavor-packed meal designed for every craving. The burger features a juicy, perfectly grilled patty � made from either premium beef or chicken � layered with melted cheese, crispy lettuce, ripe tomatoes, and tangy sauces, all nestled in a fresh, toasted bun. It�s bold, filling, and utterly delicious.",
+      "price": "80.00",
+      "slug": "fried-chips-with-burger",
+      "image": "product_img/fired-chips-with-burger-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 17,
+    "fields": {
+      "name": "Fried Fish with Vegetables",
+      "description": "Savor a delicious and balanced meal with our Fried Fish with Vegetables, a perfect harmony of flavor, texture, and nutrition. The fish is seasoned with a blend of herbs and spices, then fried until golden brown, delivering a crispy exterior and juicy, flaky interior. Accompanying the fish is a colorful medley of stir-fried vegetables�think bell peppers, carrots, onions, and zucchini�saut�ed to perfection in olive oil and lightly seasoned to enhance their natural flavors.",
+      "price": "150.00",
+      "slug": "fried-fish-with-vegetables",
+      "image": "product_img/fried-fish-with-vegetable-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 18,
+    "fields": {
+      "name": "Fried Macaroni",
+      "description": "Say hello to a comfort food upgrade with our Fried Macaroni � a cheesy, crispy, and utterly mouth-watering dish that turns a childhood favorite into a gourmet experience. This isn't your average mac and cheese. First, we cook macaroni to a perfect al dente, then toss it in a creamy cheese sauce made from a blend of cheddar, mozzarella, and a hint of Parmesan.",
+      "price": "90.00",
+      "slug": "fried-macaroni",
+      "image": "product_img/fried-macaroons-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 19,
+    "fields": {
+      "name": "Fried Spaghetti",
+      "description": "Treat your taste buds to the rich, savory goodness of our Fried Spaghetti, a delightful twist on a classic favorite. Unlike traditional boiled spaghetti, this dish takes things up a notch by pan-frying the pasta in a flavorful blend of herbs, spices, and sauces. The result is a perfectly crispy, golden texture on the outside while remaining soft and chewy on the inside.",
+      "price": "80.00",
+      "slug": "fried-spaghetti",
+      "image": "product_img/fried-spaghetti-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 20,
+    "fields": {
+      "name": "Guccie Clothing Set",
+      "description": "Experience the perfect blend of comfort and designer flair with the Guccie Clothing Set, an ensemble curated for fashion enthusiasts who appreciate high-end style at an affordable price point. This set includes a sleek, logo-embellished top paired with matching bottoms that offer a coordinated, polished look for both casual and semi-formal settings.",
+      "price": "100.00",
+      "slug": "guccie-clothing-set",
+      "image": "product_img/gucci-clothing-set-min.jpg",
+      "featured": false,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 21,
+    "fields": {
+      "name": "Gucci Purple Sweater",
+      "description": "Elevate your wardrobe with the statement-making Gucci Purple Sweater, a luxurious blend of modern fashion and timeless elegance. Made from high-quality materials that offer warmth and comfort, this sweater features Gucci�s signature craftsmanship and distinctive design elements. The deep, regal purple color sets it apart, making it a standout piece in any outfit.",
+      "price": "150.00",
+      "slug": "gucci-purple-sweater",
+      "image": "product_img/gucci-purple-sweater-min.jpg",
+      "featured": true,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 22,
+    "fields": {
+      "name": "Hooked - Learn to stay focused",
+      "description": "Hooked: Learn to Stay Focused is a transformative read for anyone struggling with attention in the modern digital age. In this engaging book, readers are introduced to behavioral psychology insights and actionable techniques for regaining control over their time and focus. Drawing from science-backed studies, the book explores how habits form, how attention is hijacked, and how one can break the cycle of distraction.",
+      "price": "80.00",
+      "slug": "hooked-learn-to-stay-focused",
+      "image": "product_img/hooked-book-min.jpg",
+      "featured": false,
+      "category": 5
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 23,
+    "fields": {
+      "name": "Jeff Bezos' Recommended Books",
+      "description": "Explore the intellectual side of Amazon�s founder with Jeff Bezos' Recommended Books, a curated collection that reflects the ideas, principles, and leadership values that shaped one of the world�s most influential entrepreneurs. This book bundle includes titles often mentioned by Bezos in interviews and shareholder letters�books that delve into business strategy, innovation, long-term thinking, customer obsession, and leadership excellence.",
+      "price": "100.00",
+      "slug": "jeff-bezos-recommended-books",
+      "image": "product_img/jeff-recommed-books-min.jpg",
+      "featured": false,
+      "category": 5
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 24,
+    "fields": {
+      "name": "The Book  - Lord of the rings",
+      "description": "Step into the rich, mythical world of Middle-earth with The Lord of the Rings, a legendary literary masterpiece by J.R.R. Tolkien. This epic tale follows the journey of Frodo Baggins, a humble hobbit entrusted with the task of destroying a powerful ring that could bring ruin to the world if it falls into the wrong hands. Along the way, readers encounter unforgettable characters like Gandalf the Grey, Aragorn the ranger, the loyal Samwise Gamgee, and many others, each adding depth to the intricate plot and emotional narrative.",
+      "price": "80.00",
+      "slug": "the-book-lord-of-the-rings",
+      "image": "product_img/lord-of-the-rings-min.jpg",
+      "featured": false,
+      "category": 5
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 25,
+    "fields": {
+      "name": "Milky Jacket",
+      "description": "The Milky Jacket combines contemporary fashion with cozy comfort, making it a versatile addition to any wardrobe. Crafted from high-quality materials, it offers warmth without compromising on style. Its neutral tones and minimalist design allow for easy pairing with various outfits, from casual jeans to formal attire.",
+      "price": "200.00",
+      "slug": "milky-jacket",
+      "image": "product_img/milky-jacket-min.jpg",
+      "featured": true,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 26,
+    "fields": {
+      "name": "Simple Videography Set",
+      "description": "Embark on your filmmaking journey with our Simple Videography Set, tailored for beginners and enthusiasts. This comprehensive kit includes a high-definition camera, tripod, external microphone, and lighting equipment, providing all the essentials for quality video production. Its user-friendly components ensure ease of use, allowing you to focus on creativity rather than technicalities.",
+      "price": "550.00",
+      "slug": "simple-videography-set",
+      "image": "product_img/simple-videogragher-set-min_pWPB5dY.jpg",
+      "featured": true,
+      "category": 1
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 27,
+    "fields": {
+      "name": "Smart Watch Black V9",
+      "description": "Stay connected and monitor your health with the Smart Watch Black V9. This sleek wearable offers features like heart rate monitoring, sleep tracking, and step counting, helping you stay on top of your fitness goals. Receive notifications for calls, messages, and apps directly on your wrist, ensuring you never miss important updates. Its customizable watch faces and interchangeable straps allow for personalization to match your style.",
+      "price": "100.00",
+      "slug": "smart-watch-black-v9",
+      "image": "product_img/smart-black-v9-min_FHUtRx3.jpg",
+      "featured": true,
+      "category": 1
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 28,
+    "fields": {
+      "name": "Samsung Gaming Pad",
+      "description": "Elevate your gaming experience with the Samsung Gaming Pad, designed for precision and comfort. Its ergonomic design ensures prolonged gaming sessions without fatigue, while responsive buttons and analog sticks provide accurate control. Compatible with various devices, including smartphones and tablets, it offers versatility for gamers on the go. Features like customizable buttons and vibration feedback enhance immersion, making every game more engaging.",
+      "price": "100.00",
+      "slug": "samsung-gaming-pad",
+      "image": "product_img/smasung-gaming-pad-min_qsdyhW4.jpg",
+      "featured": true,
+      "category": 1
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 29,
+    "fields": {
+      "name": "Sony 4K Digital Camera",
+      "description": "Capture life's moments in stunning detail with the Sony 4K Digital Camera. Equipped with advanced imaging technology, it delivers ultra-high-definition videos and crisp photos, ensuring every memory is preserved with clarity. Its user-friendly interface and compact design make it suitable for both amateur photographers and seasoned professionals. Features like fast autofocus, image stabilization, and various shooting modes enhance the photography experience.",
+      "price": "100.00",
+      "slug": "sony-4k-digital-camera",
+      "image": "product_img/sony-4k-digital-camera-min.jpg",
+      "featured": false,
+      "category": 1
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 30,
+    "fields": {
+      "name": "Strawberry Chocolate Cake",
+      "description": "Indulge in the delightful fusion of flavors with our Strawberry Chocolate Cake. This decadent dessert features layers of moist chocolate sponge cake interlaced with fresh strawberry compote and rich chocolate ganache. Topped with a glossy chocolate glaze and adorned with fresh strawberries, it offers a perfect balance of sweetness and tartness. Ideal for celebrations or as a special treat, this cake promises to satisfy your sweet cravings.",
+      "price": "100.00",
+      "slug": "strawberry-chocolate-cake",
+      "image": "product_img/strawberry-chocolate-cake-min.jpg",
+      "featured": true,
+      "category": 2
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 31,
+    "fields": {
+      "name": "TommyHilfiger Sweaters",
+      "description": "Tommy Hilfiger sweaters epitomize classic American style, blending timeless designs with modern comfort. Crafted from premium materials, these sweaters offer a soft touch and lasting durability. Available in various styles, including crew necks, V-necks, and turtlenecks, they cater to diverse fashion preferences. The brand's signature color palette and subtle logo detailing add a touch of sophistication, making these sweaters suitable for both casual and semi-formal occasions.",
+      "price": "100.00",
+      "slug": "tommyhilfiger-sweaters",
+      "image": "product_img/tommyhilfiger-sweaters-min.jpg",
+      "featured": true,
+      "category": 3
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 32,
+    "fields": {
+      "name": "Toy Trailer",
+      "description": "The Toy Trailer is the perfect companion for young explorers who love imaginative play. Designed to attach seamlessly to compatible toy vehicles, it allows children to transport their favorite miniatures, from animals to action figures. Its realistic design, complete with functioning doors and detailed interiors, enhances the play experience, encouraging storytelling and creativity. Made from high-quality, child-safe materials, the Toy Trailer is built to endure countless adventures, whether indoors or in the backyard.",
+      "price": "70.00",
+      "slug": "toy-trailer",
+      "image": "product_img/toy-trailer-vehicles-min.jpg",
+      "featured": true,
+      "category": 4
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 33,
+    "fields": {
+      "name": "Toy Tundra",
+      "description": "The Toy Tundra is a rugged and realistic miniature replica of the popular pickup truck, designed to ignite the imagination of young adventurers. Crafted with attention to detail, it features durable materials that can withstand rough play, making it ideal for both indoor and outdoor use. Its movable parts, such as doors and wheels, enhance interactive play, allowing children to simulate real-life driving experiences.",
+      "price": "90.00",
+      "slug": "toy-tundra",
+      "image": "product_img/toy-tundra-car-min.jpg",
+      "featured": true,
+      "category": 4
+    }
+  },
+  {
+    "model": "apiApp.product",
+    "pk": 34,
+    "fields": {
+      "name": "Donald Trumps' Recommeded Books",
+      "description": "Donald Trump's recommended reading list offers insights into the books that have influenced his business strategies and leadership style. Notably, \"The Art of the Deal,\" co-authored by Trump, provides a glimpse into his approach to business negotiations and deal-making. This book, among others on his list, reflects the principles and tactics he values in the business world.",
+      "price": "80.00",
+      "slug": "donald-trumps-recommeded-books",
+      "image": "product_img/trump-recommended-books-min.jpg",
+      "featured": false,
+      "category": 5
+    }
+  },
+  {
+    "model": "apiApp.cart",
+    "pk": 13,
+    "fields": {
+      "cart_code": "NKPkTqHn8K",
+      "created_at": "2025-04-20T01:42:47.430Z",
+      "updated_at": "2025-04-20T01:42:47.430Z"
+    }
+  },
+  {
+    "model": "apiApp.cart",
+    "pk": 14,
+    "fields": {
+      "cart_code": "LPlfVlvuxC",
+      "created_at": "2025-04-22T18:08:26.419Z",
+      "updated_at": "2025-04-22T18:08:26.422Z"
+    }
+  },
+  {
+    "model": "apiApp.cart",
+    "pk": 15,
+    "fields": {
+      "cart_code": "7rB39rDkC4",
+      "created_at": "2025-04-23T02:48:34.193Z",
+      "updated_at": "2025-04-23T02:48:34.193Z"
+    }
+  },
+  {
+    "model": "apiApp.cart",
+    "pk": 16,
+    "fields": {
+      "cart_code": "cIqQ8bDxa6",
+      "created_at": "2025-04-26T02:55:41.369Z",
+      "updated_at": "2025-04-26T02:55:41.369Z"
+    }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 36,
+    "fields": { "cart": 13, "product": 7, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 37,
+    "fields": { "cart": 13, "product": 14, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 38,
+    "fields": { "cart": 13, "product": 20, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 39,
+    "fields": { "cart": 13, "product": 21, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 40,
+    "fields": { "cart": 13, "product": 6, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 41,
+    "fields": { "cart": 14, "product": 6, "quantity": 5 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 42,
+    "fields": { "cart": 14, "product": 21, "quantity": 3 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 43,
+    "fields": { "cart": 14, "product": 14, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 44,
+    "fields": { "cart": 15, "product": 7, "quantity": 1 }
+  },
+  {
+    "model": "apiApp.cartitem",
+    "pk": 45,
+    "fields": { "cart": 15, "product": 20, "quantity": 4 }
+  },
+  {
+    "model": "apiApp.review",
+    "pk": 2,
+    "fields": {
+      "product": 5,
+      "user": 2,
+      "rating": 4,
+      "review": "Awesome, I love it!",
+      "created": "2025-04-15T12:44:28.206Z",
+      "updated": "2025-04-15T12:44:28.206Z"
+    }
+  },
+  {
+    "model": "apiApp.review",
+    "pk": 3,
+    "fields": {
+      "product": 5,
+      "user": 1,
+      "rating": 5,
+      "review": "Beautiful and perfect, I love it.",
+      "created": "2025-04-15T12:49:01.064Z",
+      "updated": "2025-04-15T12:49:01.064Z"
+    }
+  },
+  {
+    "model": "apiApp.review",
+    "pk": 25,
+    "fields": {
+      "product": 5,
+      "user": 3,
+      "rating": 5,
+      "review": "Sweet strawberry.",
+      "created": "2025-04-18T04:05:14.412Z",
+      "updated": "2025-04-18T05:25:27.693Z"
+    }
+  },
+  {
+    "model": "apiApp.review",
+    "pk": 26,
+    "fields": {
+      "product": 16,
+      "user": 3,
+      "rating": 5,
+      "review": "Wow, it tastes so nice. I highly recommend.",
+      "created": "2025-04-18T05:26:25.024Z",
+      "updated": "2025-04-18T05:27:14.773Z"
+    }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 2,
+    "fields": {
+      "product": 5,
+      "average_rating": 4.666666666666667,
+      "total_reviews": 3
+    }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 3,
+    "fields": { "product": 12, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 4,
+    "fields": { "product": 7, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 5,
+    "fields": { "product": 20, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 6,
+    "fields": { "product": 15, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 7,
+    "fields": { "product": 31, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 8,
+    "fields": { "product": 21, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 9,
+    "fields": { "product": 25, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 10,
+    "fields": { "product": 16, "average_rating": 5.0, "total_reviews": 1 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 11,
+    "fields": { "product": 17, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 12,
+    "fields": { "product": 18, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 13,
+    "fields": { "product": 30, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 14,
+    "fields": { "product": 19, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 15,
+    "fields": { "product": 23, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 16,
+    "fields": { "product": 13, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 17,
+    "fields": { "product": 24, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 18,
+    "fields": { "product": 34, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.productrating",
+    "pk": 19,
+    "fields": { "product": 27, "average_rating": 0.0, "total_reviews": 0 }
+  },
+  {
+    "model": "apiApp.wishlist",
+    "pk": 12,
+    "fields": { "user": 2, "product": 7, "created": "2025-04-21T03:01:25.957Z" }
+  },
+  {
+    "model": "apiApp.order",
+    "pk": 1,
+    "fields": {
+      "stripe_checkout_id": "cs_test_b1jIZvQY1hoPCxLViKljHDdJ3hFl2w5wKEf6mvgAdysn2Hn8MtTAkt4glf",
+      "amount": "136000.00",
+      "currency": "usd",
+      "customer_email": "clint@gmail.com",
+      "status": "Paid",
+      "created_at": "2025-03-09T03:14:36.032Z"
+    }
+  }
+]
