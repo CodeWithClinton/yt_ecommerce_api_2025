@@ -99,25 +99,37 @@ DB = os.environ.get("DB")
 # If you set DB to True you will have the postgres database, if set DB to False, you will the sqlite3 databse.
 
 
-if DB in ["True", True]:
-    DATABASES = {
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'railway',
             'USER': 'postgres',
-            'PASSWORD': os.environ.get("PG_PASSWORD"),
-            'HOST': os.environ.get("PG_HOST"),
-            'PORT': os.environ.get("PG_PORT"),  
+            'PASSWORD': os.getenv("PG_PASSWORD"),
+            'HOST': os.getenv("PG_HOST"),
+            'PORT': os.getenv("PG_PORT"),  
         }
     }
 
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+
+# if DB in ["True", True]:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'railway',
+#             'USER': 'postgres',
+#             'PASSWORD': os.environ.get("PG_PASSWORD"),
+#             'HOST': os.environ.get("PG_HOST"),
+#             'PORT': os.environ.get("PG_PORT"),  
+#         }
+#     }
+
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
 
 # Password validation
@@ -169,3 +181,6 @@ AUTH_USER_MODEL = "apiApp.CustomUser"
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
+
+
+print("PG_HOST", os.getenv("PG_HOST"))
