@@ -103,7 +103,7 @@ DB = os.getenv("DB")
 
 
 if DB in ["True", True]:
-    print("aPPa yip yip")
+    print("Appa yip yip")
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -117,7 +117,7 @@ if DB in ["True", True]:
 
 
 else:
-    print("momo yip yip")
+    print("Momo yop yop")
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -177,5 +177,3 @@ STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")
 
 
-print("PG_HOST", os.getenv("PG_HOST"))
-print("PG_HOST_II", os.environ.get("PG_HOST"))

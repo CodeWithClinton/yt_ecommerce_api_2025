@@ -2369,15 +2369,7 @@
       "updated": "2025-04-18T05:27:14.773Z"
     }
   },
-  {
-    "model": "apiApp.productrating",
-    "pk": 2,
-    "fields": {
-      "product": 5,
-      "average_rating": 4.666666666666667,
-      "total_reviews": 3
-    }
-  },
+ 
   {
     "model": "apiApp.productrating",
     "pk": 3,
