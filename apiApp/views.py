@@ -318,6 +318,7 @@ def add_address(request):
     email = request.data.get("email")
     street = request.data.get("street")
     city = request.data.get("city")
+    state = request.data.get("state")
     phone = request.data.get("phone")
 
     if not email:
@@ -325,11 +326,12 @@ def add_address(request):
     
     customer = User.objects.get(email=email)
 
-    address, created = CustomerAddress.objects.get_wor_create(
+    address, created = CustomerAddress.objects.get_or_create(
         customer=customer)
     address.email = email 
     address.street = street 
     address.city = city 
+    address.state = state
     address.phone = phone 
     address.save()
 

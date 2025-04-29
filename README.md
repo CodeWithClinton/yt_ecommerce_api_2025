@@ -503,6 +503,7 @@ This API supports a basic e-commerce platform with features like product listing
 {
   "email": "user@example.com",
   "street": "123 Street",
+  "state": "Lagos",
   "city": "Cityname",
   "phone": "123456789"
 }
