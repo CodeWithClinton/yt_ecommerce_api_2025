@@ -196,25 +196,13 @@ def create_checkout_session(request):
             ],
 
 
-            
-            # line_items=[
-            #     {
-            #         'price_data': {
-            #             'currency': 'usd',
-            #             'product_data': {'name': item.product.name},
-            #             'unit_amount': int(item.product.price) * 100,  # Amount in cents ($10)
-            #         },
-            #         'quantity': item.quantity,
-            #     }
-
-            #     for item in cart.cartitems.all()
-            # ],
+           
             mode='payment',
-            # success_url="https://nextshoppit.vercel.app/success",
-            # cancel_url="https://nextshoppit.vercel.app/cancel",
+            # success_url="http://localhost:3000/success",
+            # cancel_url="http://localhost:3000/cancel",
 
-            success_url="http://localhost:3000/success",
-            cancel_url="http://localhost:3000/failed",
+            success_url="https://next-shop-self.vercel.app/success",
+            cancel_url="https://next-shop-self.vercel.app/failed",
             metadata = {"cart_code": cart_code}
         )
         return Response({'data': checkout_session})
