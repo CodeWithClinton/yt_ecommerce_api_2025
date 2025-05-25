@@ -254,9 +254,6 @@ This Django project is a backend API for an e-commerce application. It provides 
    ```
 
 
-
-Sure Clinton! Here's a brief and well-structured README-style documentation for all the endpoints you listed. This includes the endpoint, payload (for `POST`/`PUT`), and the expected response.
-
 ---
 
 # 🛍️ E-commerce API Documentation
