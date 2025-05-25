@@ -253,7 +253,6 @@ This Django project is a backend API for an e-commerce application. It provides 
    python manage.py runserver
    ```
 
-
 ---
 
 # 🛍️ E-commerce API Documentation
